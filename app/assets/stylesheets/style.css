@@ -7,20 +7,24 @@ h3{
 #happy{
   background-color: yellow;
 /*  width: 600px;*/
-  height: 500px;
+  /*height: 500px;*/
 }
 #sad{
   background-color: green;
 /*  width: 300px;*/
-  height: 500px;
+  /*height: 500px;*/
 }
 #angry{
   background-color: red;
 /*  width: 300px;*/
-  height: 500px;
+  /*height: 500px;*/
 }
 #calm{
   background-color: blue;
 /*  width: 300px;*/
-  height: 500px;
+  /*height: 500px;*/
+}
+.fill{
+    min-height: 500px;
+    height: 500px;
 }
