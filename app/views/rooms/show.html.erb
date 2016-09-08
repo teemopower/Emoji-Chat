@@ -1,13 +1,16 @@
-<h1>Rooms#show</h1>
+<div class="showPage">
+  <h1 class="text-center">Chat Room</h1>
+  <div class="pre-scrollable">
+    <div id="messages">
+      <%= render @messages %>
+    </div>
+  </div>
 
-<div id="messages">
-  <%= render @messages %>
+  <form class="text-center">
+    <label>
+      Say something:<br>
+    </label>
+    <input class="form-control text-center" type="text" data-behavior="room_speaker" placeholder="Write text here">
+
+  </form>
 </div>
-
-<form>
-  <label>
-    Say something:<br>
-  </label>
-  <input type="text" data-behavior="room_speaker">
-
-</form>
