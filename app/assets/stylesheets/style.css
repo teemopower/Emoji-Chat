@@ -28,3 +28,8 @@ h3{
     min-height: 500px;
     height: 500px;
 }
+.image{
+  width: 100%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
