@@ -5,22 +5,22 @@ h3{
   font-family: "Futura";
 }
 #happy{
-  background-color: yellow;
+  background-color: #f7b733;
 /*  width: 600px;*/
   /*height: 500px;*/
 }
 #sad{
-  background-color: green;
+  background-color: #4abdac;
 /*  width: 300px;*/
   /*height: 500px;*/
 }
 #angry{
-  background-color: red;
+  background-color: #fc4a1a;
 /*  width: 300px;*/
   /*height: 500px;*/
 }
 #calm{
-  background-color: blue;
+  background-color: #dfdce3;
 /*  width: 300px;*/
   /*height: 500px;*/
 }
