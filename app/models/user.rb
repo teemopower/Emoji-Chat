@@ -3,14 +3,13 @@ class User < ApplicationRecord
   validates :email,
   presence: true,
   uniqueness: { case_sensitive: false }
-  validates :password
 
   #need to install bcrypt gem, creates a password digest
-  # has_secure_password
+  has_secure_password
 
-  # validates :password,
-  # length: { in: 8..72},
-  # on: :creates
+  validates :password,
+  length: { in: 8..72 },
+  on: :creates
 
   def self.authenticate(params)
     User.find_by_email(params[:email]).try(:authenticate, params[:password])
