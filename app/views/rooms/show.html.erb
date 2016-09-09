@@ -1,9 +1,7 @@
-  <%= stylesheet_link_tag 'style.css' %>
-
-<h1>Rooms#show</h1>
+<%= stylesheet_link_tag 'style.css' %>
 <div class="showPage">
   <h1 class="text-center">Chat Room</h1>
-  <div class="pre-scrollable">
+  <div class="pre-scrollable chatbox">
     <div id="messages">
       <%= render @messages %>
     </div>
@@ -13,7 +11,10 @@
     <label>
       Say something:<br>
     </label>
-    <input class="form-control text-center" type="text" data-behavior="room_speaker" placeholder="Write text here">
-
+    <div class="emoji-picker-container">
+      <input class="form-control text-center" type="text" data-behavior="room_speaker" placeholder="Write text here" data-emojiable="true">
+    </div>
   </form>
+
 </div>
+<%= javascript_include_tag('chatscroller') %>
