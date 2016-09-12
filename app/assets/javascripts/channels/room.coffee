@@ -8,13 +8,11 @@ App.room = App.cable.subscriptions.create "RoomChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
-    $('#chatbox').scrollTop($('#chatbox').scrollHeight = 10000000)
+    $('#chatbox').scrollTop($('#chatbox').scrollHeight = 90000000)
     $('#messages').append data['message']
 
   speak: (message)->
     @perform 'speak', message: message
-
-
 
 $(document).on 'keyup', '.emoji-wysiwyg-editor', (event) ->
   if event.keyCode is 13 # return = send
