@@ -1,18 +1,23 @@
 <%= stylesheet_link_tag 'style.css' %>
 <%= audio_tag "beepone.mp3", class: "audio-play" %>
+<style>
+body {background-color: #000000;}
+</style>
+<div><h3 class="float">How Do You Feel Today?</h3></div>
+<div class="main">
+	
 
-<h3>How Do You Feel Today?</h3>
-<div>
-	<div id="happy" class="col-md-6 col-xs-12 fill">
+	<div id="happy" class="col-md-6 col-xs-12 fill happy">
 		<%= image_tag("happy.png", :alt => "Happy", :class => "image") %>
 	</div>
-	<div id="sad" class="col-md-6 col-xs-12 fill">
+	<div id="sad" class="col-md-6 col-xs-12 fill sad">
 		<%= image_tag("sad.png", :alt => "Sad", :class => "image") %>
 	</div>
-	<div id="angry" class="col-md-6 col-xs-12 fill">
+	</div><div>
+	<div id="angry" class="col-md-6 col-xs-12 fill angry">
 		<%= image_tag("mad.png", :alt => "Mad", :class => "image") %>
 	</div>
-	<div id="calm" class="col-md-6 col-xs-12 fill">
+	<div id="calm" class="col-md-6 col-xs-12 fill calm">
 		<%= image_tag("neutral.png", :alt => "Neutral", :class => "image") %>
 	</div>
 </div>
