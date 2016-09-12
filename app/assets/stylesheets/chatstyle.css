@@ -36,10 +36,11 @@
 }
 
 #chat-input{
-  width: 30%;
-  margin: 20px 0 0 35%;
-  border: 3px inset black;
+  display:none;
+/*  width: 30%;
+  margin: 20px 0 0 35%;*/
+/*  border: 3px inset black;
   height: 80px;
-  font-size: 30px;
+  font-size: 30px;*/
 }
 
