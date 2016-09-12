@@ -10,9 +10,15 @@
     </div>
   </div>
 
-  <form>
-    <input id="chat-input" class="form-control text-left" type="text" data-behavior="room_speaker" placeholder="Say something ...">
-  </form>
+ <!--  <form class=text-center>
+    <div class="emoji-picker-container text-center">
+      <input id="chat-input" class="text-left form-control override" type="text" data-behavior="room_speaker" placeholder="Say something ..." data-emojiable="true">
+    </div>
+  </form> -->
+
+  <div class="emoji-picker-container text-center">
+    <%= text_field_tag "chat-input", nil, class: "text-left form-control", data: {emojiable: true, behavior: "room_speaker"} %>
+  </div>
 
 
 </div>
