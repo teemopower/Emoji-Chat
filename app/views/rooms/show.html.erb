@@ -1,25 +1,37 @@
 <%= stylesheet_link_tag 'style.css' %>
 <%= audio_tag "beepone.mp3", class: "audio-play" %>
-
-
-<div class="showPage">
-  <h1 class="text-center">Chat Room</h1>
-  <div id="chatbox" class="pre-scrollable chatbox">
-    <div id="messages">
-      <%= render @messages %>
+<div class="jelly-container">
+  <div class="bubble-1"></div>
+  <div class="bubble-2"></div>
+  <div class="bubble-3"></div>
+  <div class="bubble-4"></div>
+  <div class="bubble-5"></div>
+  <div class="bubble-6"></div>
+  <div class="bubble-7"></div>
+  <div class="bubble-8"></div>
+  <div class="bubble-9"></div>
+  <div class="bubble-10"></div>
+  <div class="bubble-11"></div>
+  <div class="bubble-12"></div>
+  <div class="bubble-13"></div>
+  <div class="bubble-14"></div>
+  <div class="bubble-15"></div>
+  <div class="bubble-16"></div>
+  <div class="bubble-17"></div>
+  <div class="bubble-18"></div>
+  <div class="bubble-19"></div>
+  <div class="bubble-20"></div>
+  <div class="showPage">
+    <h1 class="text-center">Chat Room</h1>
+    <div id="chatbox" class="pre-scrollable chatbox">
+      <div id="messages">
+        <%= render @messages %>
+      </div>
     </div>
-  </div>
 
- <!--  <form class=text-center>
-    <div class="emoji-picker-container text-center">
-      <input id="chat-input" class="text-left form-control override" type="text" data-behavior="room_speaker" placeholder="Say something ..." data-emojiable="true">
+    <div id="chat-input-div" class="emoji-picker-container text-center">
+      <%= text_field_tag "chat-input", nil, class: "text-left form-control", data: {emojiable: true, behavior: "room_speaker"} %>
     </div>
-  </form> -->
-
-  <div id="chat-input-div" class="emoji-picker-container text-center">
-    <%= text_field_tag "chat-input", nil, class: "text-left form-control", data: {emojiable: true, behavior: "room_speaker"} %>
-  </div>
-
 
 </div>
-<%= javascript_include_tag('chatscroller') %>
+
