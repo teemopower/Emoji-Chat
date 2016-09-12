@@ -14,14 +14,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
   speak: (message)->
     @perform 'speak', message: message
 
-$(document).on 'keypress', '[data-behavior~=room_speaker]', (event) ->
-  if event.keyCode is 13 # return = send
-    App.room.speak event.target.value
-    event.target.value = ''
-    event.preventDefault()
-    $('#chatbox').scrollTop($('#chatbox').scrollHeight = 10000000)
-    $(".audio-play")[0].currentTime = 0
-    return $(".audio-play")[0].play()
+
 
 $(document).on 'keyup', '.emoji-wysiwyg-editor', (event) ->
   if event.keyCode is 13 # return = send
