@@ -1,7 +1,6 @@
 <%= stylesheet_link_tag 'style.css' %>
 <%= audio_tag "beepone.mp3", class: "audio-play" %>
 
-
 <div class="showPage">
   <h1 class="text-center">Chat Room</h1>
   <div id="chatbox" class="pre-scrollable chatbox">
@@ -10,16 +9,7 @@
     </div>
   </div>
 
- <!--  <form class=text-center>
-    <div class="emoji-picker-container text-center">
-      <input id="chat-input" class="text-left form-control override" type="text" data-behavior="room_speaker" placeholder="Say something ..." data-emojiable="true">
-    </div>
-  </form> -->
-
   <div id="chat-input-div" class="emoji-picker-container text-center">
-    <%= text_field_tag "chat-input", nil, class: "text-left form-control", data: {emojiable: true, behavior: "room_speaker"} %>
+    <%= text_field_tag "chat-input", nil, class: "text-left form-control", placeholder: "Say something ...", data: {emojiable: true, behavior: "room_speaker"} %>
   </div>
-
-
 </div>
-<%= javascript_include_tag('chatscroller') %>
