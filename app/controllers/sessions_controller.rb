@@ -1,8 +1,12 @@
 class SessionsController < ApplicationController
   def new
+    @user = User.new
   end
 
   def create
+
+    User.create(user_params)
+
     #returns boolean, sends to user class .self
     user = User.authenticate(user_params)
 
