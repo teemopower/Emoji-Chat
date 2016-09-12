@@ -7,40 +7,40 @@ $ ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/need"
+    delay 1000, -> window.location.href = "/need"
   $("#sad").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/need"
+    delay 1000, -> window.location.href = "/need"
   $("#angry").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/need"
+    delay 1000, -> window.location.href = "/need"
   $("#calm").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/need"
+    delay 1000, -> window.location.href = "/need"
   $("#happy-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show"
   $("#sad-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show"
   $("#angry-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show"
   $("#calm-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 2000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show"
 
