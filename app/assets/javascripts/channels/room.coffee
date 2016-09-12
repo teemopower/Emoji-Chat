@@ -20,5 +20,6 @@ $(document).on 'keypress', '[data-behavior~=room_speaker]', (event) ->
     App.room.speak event.target.value
     event.target.value = ''
     event.preventDefault()
-    $(".audio-play")[0].currentTime = 0;
-    return $(".audio-play")[0].play();
+    $('#chatbox').scrollTop($('#chatbox').scrollHeight = 10000000)
+    $(".audio-play")[0].currentTime = 0
+    return $(".audio-play")[0].play()

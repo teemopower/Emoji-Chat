@@ -4,7 +4,7 @@
 
 <div class="showPage">
   <h1 class="text-center">Chat Room</h1>
-  <div class="pre-scrollable chatbox">
+  <div id="chatbox" class="pre-scrollable chatbox">
     <div id="messages">
       <%= render @messages %>
     </div>
@@ -12,8 +12,6 @@
 
   <form>
     <input id="chat-input" class="form-control text-left" type="text" data-behavior="room_speaker" placeholder="Say something ...">
-
-  
   </form>
 
 </div>
