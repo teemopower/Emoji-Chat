@@ -15,3 +15,10 @@
  *= require_self
  */
  
+ #chat-input-div{
+  margin-left: 35%;
+ }
+
+ .text-left.form-control{
+  width: 500px;
+ }
