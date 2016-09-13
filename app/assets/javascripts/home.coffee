@@ -23,24 +23,24 @@ $ ->
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
     delay 1000, -> window.location.href = "/need"
-  $("#happy-need").click ->
-    $(".audio-play")[0].currentTime = 0
-    $(".audio-play")[0].play()
-    delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show2"
   $("#sad-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/sad"
+  $("#happy-need").click ->
+    $(".audio-play")[0].currentTime = 0
+    $(".audio-play")[0].play()
+    delay = (ms, func) -> setTimeout func, ms
+    delay 1000, -> window.location.href = "/happy"
   $("#angry-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show3"
+    delay 1000, -> window.location.href = "/angry"
   $("#calm-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show4"
+    delay 1000, -> window.location.href = "/calm"
 

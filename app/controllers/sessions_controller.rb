@@ -22,7 +22,10 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    Message.delete_all
+    Angry.delete_all
+    Happy.delete_all
+    Sad.delete_all
+    Calm.delete_all
     flash[:success] = "User is logged out"
     redirect_to root_path
   end

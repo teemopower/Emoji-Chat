@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   get 'need' => 'home#need'
   
   ###### CHATROOM ROUTE
-  get 'show'=> 'rooms#show'
-  get 'show2'=> 'rooms#show2'
-  get 'show3'=> 'rooms#show3'
-  get 'show4'=> 'rooms#show4'
+  get 'sad'=> 'rooms#sad'
+  get 'happy'=> 'rooms#happy'
+  get 'angry'=> 'rooms#angry'
+  get 'calm'=> 'rooms#calm'
 
   ###### AUTHENTICATION ROUTES
 

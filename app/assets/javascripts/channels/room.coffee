@@ -11,12 +11,21 @@ App.room = App.cable.subscriptions.create "RoomChannel",
     $('#chatbox').scrollTop($('#chatbox').scrollHeight = 90000000)
     $('#messages').append data['message']
 
-  speak: (message)->
-    @perform 'speak', message: message
+  happy: (message)->
+    @perform 'happy', message: message
+
+  sad: (message)->
+    @perform 'sad', message: message
+
+  calm: (message)->
+    @perform 'calm', message: message
+  
+  angry: (message)->
+    @perform 'angry', message: message
 
 $(document).on 'keyup', '.emoji-wysiwyg-editor', (event) ->
   if event.keyCode is 13 # return = send
-    App.room.speak event.target.innerHTML
+    App.room[window.location.pathname.split('/')[1]] event.target.innerHTML
     event.target.innerHTML = ''
     event.preventDefault()
     $('#chatbox').scrollTop($('#chatbox').scrollHeight = 10000000)
