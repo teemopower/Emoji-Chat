@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   
   ###### CHATROOM ROUTE
   get 'show'=> 'rooms#show'
+  get 'show2'=> 'rooms#show2'
+  get 'show3'=> 'rooms#show3'
+  get 'show4'=> 'rooms#show4'
 
   ###### AUTHENTICATION ROUTES
 
