@@ -40,13 +40,29 @@ filter: alpha(opacity=50);
 display: block;
 margin: 0 auto;
 }
+
 .float{
 z-index: 1;
 height: 0px;
 opacity: 1;
 filter: alpha(opacity=100);
-
+position: absolute;
+top: 51%;
+left: 33%;
+font-size: 48px;
 }
+
+.float2{
+z-index: 1;
+height: 0px;
+opacity: 1;
+filter: alpha(opacity=100);
+position: absolute;
+top: 51%;
+left: 35%;
+font-size: 48px;
+}
+
 .main{
   z-index: 0;
 }
