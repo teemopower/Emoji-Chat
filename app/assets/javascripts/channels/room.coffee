@@ -28,6 +28,6 @@ $(document).on 'keyup', '.emoji-wysiwyg-editor', (event) ->
     App.room[window.location.pathname.split('/')[1]] event.target.innerHTML
     event.target.innerHTML = ''
     event.preventDefault()
-    $('#chatbox').scrollTop($('#chatbox').scrollHeight = 10000000)
+    $('#chatbox').scrollTop($('#chatbox').scrollHeight = 90000000)
     $(".audio-play")[0].currentTime = 0
     return $(".audio-play")[0].play()
