@@ -79,5 +79,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: Emoji-Chat_production
+  url: <%= ENV['DATABASE_URL'] %>
+  # <<: *default

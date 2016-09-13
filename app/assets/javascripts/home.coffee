@@ -27,7 +27,7 @@ $ ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show2"
   $("#sad-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
@@ -37,10 +37,10 @@ $ ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show3"
   $("#calm-need").click ->
     $(".audio-play")[0].currentTime = 0
     $(".audio-play")[0].play()
     delay = (ms, func) -> setTimeout func, ms
-    delay 1000, -> window.location.href = "/show"
+    delay 1000, -> window.location.href = "/show4"
 
