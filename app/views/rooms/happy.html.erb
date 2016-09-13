@@ -1,9 +1,10 @@
 <style>
 body{
-  background-color: green !important;
+  background-color: yellow !important;
 }
 div[class^="bubble-"] {
-  background-color:rgba(0, 255, 0, 0.3) !important;
+  background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1458743621') !important;
+  background-size: 100% !important;
 }
 </style>
 <%= stylesheet_link_tag 'style.css' %>
@@ -31,10 +32,10 @@ div[class^="bubble-"] {
   <div class="bubble-19"></div>
   <div class="bubble-20"></div>
   <div class="showPage">
-    <h1 class="text-center">Chat Room</h1>
+    <h1 class="text-center">Happy Chat</h1>
     <div id="chatbox" class="pre-scrollable chatbox">
       <div id="messages">
-        <%= render @messages %>
+        <%= @messages %>
       </div>
 </div>
 

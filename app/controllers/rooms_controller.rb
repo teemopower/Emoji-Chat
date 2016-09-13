@@ -1,14 +1,28 @@
 class RoomsController < ApplicationController
-  def show
-    @messages = Message.all
+  def sad
+    @messages = Sad.all
+    puts @messages
+    puts @messages.class
   end
-  def show2
-    @messages = Message.all
+
+  def happy
+    @messages = Happy.all
+    puts @messages
+    puts @messages.class
+    
   end
-  def show3
-    @messages = Message.all
+
+  def angry
+    @messages = Angry.all
+    puts @messages
+    puts @messages.class
+    
   end
-  def show4
-    @messages = Message.all
+
+  def calm
+    @messages = Calm.all
+    puts @messages
+    puts @messages.class
+    
   end
 end
