@@ -54,7 +54,7 @@ Rails.application.configure do
 
   
   
-  Rails.application.config.action_cable.allowed_request_origins = ['http://localhost:3000', "https://chat-emoji.herokuapp.com/", 'http://chat-emoji.herokuapp.com/' /http:\/\/ruby.*/]
+  config.action_cable.allowed_request_origins = ['http://localhost:3000', "https://chat-emoji.herokuapp.com/", 'http://chat-emoji.herokuapp.com/' /http:\/\/ruby.*/]
 
 
 end
