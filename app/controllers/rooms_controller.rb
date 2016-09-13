@@ -1,4 +1,6 @@
 class RoomsController < ApplicationController
+before_action :is_authenticated, only: [:sad, :angry, :calm, :happy]
+
   def sad
     @messages = Sad.all
     puts @messages

@@ -147,7 +147,7 @@ div[class^="bubble-"] {
 
 .showPage {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   margin: 0 auto;
 }
 
@@ -163,14 +163,14 @@ div[class^="bubble-"] {
   text-align: right;
   position: relative;
   left: 40%;
-  margin-bottom: 150px;
+  margin-bottom: 140px;
 }
 
 #message-content{
   position:relative;
   padding:15px;
   margin:30px 0 10px 30px;
-  border:5px solid #126DFF;
+  border:5px solid black;
   color:#333;
   background:#fff;
   /* css3 */
@@ -178,6 +178,22 @@ div[class^="bubble-"] {
   -moz-border-radius:10px;
   border-radius:10px;
   width: 20%;
+}
+
+#angry-title{
+  font-family: 'Holtwood One SC', serif;
+}
+
+#sad-title{
+  font-family: 'Slackey', cursive;
+}
+
+#calm-title{
+  font-family: 'Special Elite', cursive;
+}
+
+#happy-title{
+  font-family: 'Monoton', cursive;
 }
 
 
