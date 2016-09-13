@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(version: 20160913005338) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "messages", force: :cascade do |t|
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "sads", force: :cascade do |t|
     t.text     "content"
     t.datetime "created_at", null: false
@@ -43,8 +49,8 @@ ActiveRecord::Schema.define(version: 20160913005338) do
     t.string   "email"
     t.string   "username"
     t.string   "password_digest"
-    t.integer  "feel"
-    t.integer  "want"
+    t.integer  "rating"
+    t.integer  "num_of_ratings"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
